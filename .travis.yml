@@ -33,7 +33,17 @@ deploy:
       wait-until-deployed: true
       
       
-    
+    - provider: codedeploy
+      access_key_id: AKIAV7BTK73XXN5LBKWL
+      secret_access_key: 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
+      bucket: janghyun2-homepage
+      key: homepage.zip
+      bundle_type: zip
+      application: homepage
+      deployment_group: homepage-group
+      region: ap-northeast-2
+      wait-until-deployed: true   
+      
       
 
 
