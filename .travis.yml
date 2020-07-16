@@ -20,7 +20,7 @@ before_deploy:
   
     - mkdir -p deploy
  
-    - mv homepage.zip deploy/homepage
+    - mv homepage.zip deploy/homepage.zip
 deploy:
     - provider: s3
       access_key_id: $AWS_ACCESS_KEY
