@@ -41,6 +41,7 @@ public class RestApiBoardController {
 		return jpaBoardService.selectBoardListStoreNum(storeNumber);
 	}
 	
+	
 	//book table
 	@RequestMapping(value = "/api/book_table", method = RequestMethod.GET)
 	public List<BookTable> openBookTableList() throws Exception {
