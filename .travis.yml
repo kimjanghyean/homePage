@@ -23,8 +23,8 @@ before_deploy:
     - mv homepage.zip deploy/homepage
 deploy:
     - provider: s3
-      access_key_id: AKIAV7BTK73XXN5LBKWL
-      secret_access_key: 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
+      access_key_id: $AWS_ACCESS_KEY
+      secret_access_key: $ACCESS_SECRET_KEY
       bucket: janghyun2-homepage
       region: ap-northeast-2                        
       skip_cleanup: true
@@ -34,8 +34,8 @@ deploy:
       
       
     - provider: codedeploy
-      access_key_id: AKIAV7BTK73XXN5LBKWL
-      secret_access_key: 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
+      access_key_id: $AWS_ACCESS_KEY
+      secret_access_key: $ACCESS_SECRET_KEY
       bucket: janghyun2-homepage
       key: homepage.zip
       bundle_type: zip
