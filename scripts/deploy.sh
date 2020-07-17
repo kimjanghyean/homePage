@@ -6,10 +6,10 @@ echo "> $REPOSITORY 디렉터리로 이동"
 cd $REPOSITORY
 
 echo "> 배포 파일 복사"
-cp $REPOSITORY/zip/*.jar $REPOSITORY/
+cp $REPOSITORY/zip/*.war $REPOSITORY/
 
 echo "> 구동 중인 애플리케이션 PID 검색"
-CURRENT_PID=$(pgrep -fl 'homepage*' | grep jar | awk '{ print $1 }')
+CURRENT_PID=$(pgrep -fl 'homepage*' | grep war | awk '{ print $1 }')
 
 echo "> 구동 중인 애플리케이션 PID : $CURRENT_PID"
 
