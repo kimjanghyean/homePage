@@ -24,4 +24,4 @@ fi
 JAR_NAME=$(ls -tr $REPOSITORY/ | grep jar | tail -n 1)
 echo "> 새 애플리케이션($JAR_NAME) 배포"
 
-nohup java -jar $REPOSITORY/jar/$JAR_NAME &
+nohup java -jar $REPOSITORY/zip/$JAR_NAME &
